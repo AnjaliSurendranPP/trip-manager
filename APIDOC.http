@@ -1,0 +1,47 @@
+###
+POST http://127.0.0.1:8000/register/
+Content-Type: application/json
+
+{
+    "username":"anu",
+    "email":"anu@gmail.com",
+    "password":"anu123"
+}
+
+###
+GET http://127.0.0.1:8000/trips/
+Accept: application/json
+Authorization: Basic anu:anu123
+
+###
+POST http://127.0.0.1:8000/trips/
+Content-Type: application/json
+Authorization: Basic anu:anu123
+
+{
+    "title":"Trip to alappuzha",
+    "destination":"alappuzha",
+    "start_date":"2026-11-24"
+}
+
+###
+GET http://127.0.0.1:8000/trips/4/
+Accept: application/json
+Authorization: Basic anu:anu123
+
+###
+PUT http://127.0.0.1:8000/trips/7/
+Content-Type: application/json
+Authorization: Basic anu:anu123
+
+{
+    "title":"Trip to mumbai",
+    "destination":"mumbai",
+    "start_date":"2026-11-24"
+}
+
+###
+DELETE  http://127.0.0.1:8000/trips/3/
+Content-Type: application/json
+Authorization: Basic ammu:ammu1234
+
